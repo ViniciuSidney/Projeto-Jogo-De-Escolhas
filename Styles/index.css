@@ -6,7 +6,12 @@
   font-style: normal;
 }
 
+body{
+  background-color: rgb(23, 23, 23);
+}
+
 #title{
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 

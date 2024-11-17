@@ -1,38 +1,41 @@
+const texto = document.getElementById("text-box");
+const button1 = document.getElementById("escolha-1");
+const button2 = document.getElementById("escolha-2");
 
-const texto = document.getElementById("text-box")
-const button1 = document.getElementById("escolha-1")
-const button2 = document.getElementById("escolha-2")
+let caminho = 0;
 
-const caminho = {
-  [1]:{
-      texto:"Bom dia! E ai?", 
-      escolha1:"E ai não, a gente não era um time?",
-      escolha2:"Opa, e ai!"
+const historia = {
+  [0]: {
+    texto: "Você está em um campo aberto<br>a sua esquerda há uma floresta<br>a sua direita há um rio<br>Para onde você vai?",
+    escolha1: "Ir a Floresta",
+    escolha2: "Ir ao Rio",
   },
-  [1.1]:{
-    texto:"Oloco, mano, como assim? kk", 
-    escolha1:"Sei lá, só falei kk é meme",
-    escolha2:"esquece kk"
+  [0.01]: {
+    texto: "Você foi até a floresta",
+    escolha1: "Legal",
+    escolha2: "Impressionante",
   },
-  [2]:{
-    texto:"Tranquilo? Bora jogar uns game?", 
-    escolha1:"Eu não, oxi, nem te conheço brother",
-    escolha2:"Opa, bora! Quais games?"
+  [1]: {
+    texto: "Você achou o Rio",
+    escolha1: "Muito top",
+    escolha2: "Aí sim em",
   },
+};
+
+function changeTexts(c) {
+  texto.innerHTML = historia[c].texto;
+  button1.innerHTML = historia[c].escolha1;
+  button2.innerHTML = historia[c].escolha2;
 }
 
-texto.innerHTML = caminho[1].texto;
-button1.innerHTML = caminho[1].escolha1;
-button2.innerHTML = caminho[1].escolha2;
+changeTexts(0);
 
-button1.onclick = function(){
-  texto.innerHTML = caminho[1.1].texto;
-  button1.innerHTML = caminho[1.1].escolha1;
-  button2.innerHTML = caminho[1.1].escolha2;
-}
+button1.onclick = function () {
+  caminho += 0.01;
+  changeTexts(caminho);
+};
 
-button2.onclick = function(){
-  texto.innerHTML = caminho[2].texto;
-  button1.innerHTML = caminho[2].escolha1;
-  button2.innerHTML = caminho[2].escolha2;
-}
+button2.onclick = function () {
+  caminho += 1;
+  changeTexts(caminho);
+};
