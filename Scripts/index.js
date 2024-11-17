@@ -2,23 +2,29 @@ const texto = document.getElementById("text-box");
 const button1 = document.getElementById("escolha-1");
 const button2 = document.getElementById("escolha-2");
 
-let caminho = 0;
+let caminho;
 
 const historia = {
   [0]: {
     texto: "Você está em um campo aberto<br>a sua esquerda há uma floresta<br>a sua direita há um rio<br>Para onde você vai?",
     escolha1: "Ir a Floresta",
+    escolha1function: "floresta-1",
     escolha2: "Ir ao Rio",
+    escolha2function: "rio-1",
   },
-  [0.01]: {
+  ["floresta-1"]: {
     texto: "Você foi até a floresta",
-    escolha1: "Legal",
-    escolha2: "Impressionante",
+    escolha1: "Comer maçãs",
+    escolha1function: "maçã-1",
+    escolha2: "Pegar gravetos",
+    escolha2function: "gravetos-1",
   },
-  [1]: {
+  ["rio-1"]: {
     texto: "Você achou o Rio",
-    escolha1: "Muito top",
-    escolha2: "Aí sim em",
+    escolha1: "Beber água",
+    escolha1function: "água-1",
+    escolha2: "Nadar no rio",
+    escolha2function: "nadar-1",
   },
 };
 
@@ -31,7 +37,6 @@ function changeTexts(c) {
 changeTexts(0);
 
 button1.onclick = function () {
-  caminho += 0.01;
   changeTexts(caminho);
 };
 
