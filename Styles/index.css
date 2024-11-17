@@ -1,0 +1,50 @@
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#title{
+  text-align: center;
+}
+
+main{
+  padding: 3% 0;
+  margin: 0 30% 0 30%;
+  background-color: darkgray;
+}
+
+#title-text-box, #title-buttons{
+  text-align: center;
+}
+
+#text-box{
+  text-align: center;
+  background-color: rgb(133, 133, 133);
+  margin: 0 auto;
+  width: 70%;
+  padding: 5%;
+}
+
+#section-buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+}
+
+#escolha-1, #escolha-2{
+  font-family: "JetBrains Mono";
+  width: 40%;
+  background-color: #396b59;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+}
