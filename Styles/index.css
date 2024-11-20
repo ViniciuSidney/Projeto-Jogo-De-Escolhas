@@ -23,14 +23,20 @@ main{
 
 #title-text-box, #title-buttons{
   text-align: center;
+  font-weight: 800;
 }
 
-#text-box{
-  text-align: center;
+#section-history {
   background-color: rgb(133, 133, 133);
+  text-align: center;
   margin: 0 auto;
   width: 70%;
   padding: 5%;
+}
+
+#text-alert{
+  font-weight: 800;
+  font-size: larger;
 }
 
 #section-buttons{
