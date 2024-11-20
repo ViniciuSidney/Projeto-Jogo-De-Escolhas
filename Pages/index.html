@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Styles/index.css">
+    <link rel="stylesheet" href="/Styles/index.css" />
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-    </style> 
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+    </style>
 
-    <title>Jogo</title>
+    <title>Jogo de Escolhas</title>
   </head>
   <body class="jetbrains-mono">
     <header>
-      <h1 id="title">Jogo</h1>
+      <h1 class="title" id="title-main">Jogo de Escolhas</h1>
+      <h2 class="title" id="version">Versão <span>Protótipo</span></h2>
     </header>
+
     <main>
       <h2 id="title-text-box">História</h2>
       <section id="section-history">
-        <p id="text-box">Texto</p>
+        <p id="text-box">Texto da História aqui!</p>
         <p id="text-alert">...</p>
       </section>
+
       <h2 id="title-buttons">Escolhas</h2>
       <section id="section-buttons">
-        <button value="" id="escolha-1" type="button">Escolha 1</button>
-        <button value="" id="escolha-2" type="button">Escolha 2</button>
+        <button class="jetbrains-mono" value="" id="choice-1" type="button">Escolha 1</button>
+        <button class="jetbrains-mono" value="" id="choice-2" type="button">Escolha 2</button>
       </section>
     </main>
     <script src="/Scripts/index.js"></script>
