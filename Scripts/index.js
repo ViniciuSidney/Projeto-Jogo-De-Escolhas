@@ -1,4 +1,3 @@
-
 const texto = document.getElementById("text-box");
 const texto_alerta = document.getElementById("text-alert");
 const button1 = document.getElementById("escolha-1");
@@ -68,7 +67,7 @@ const historia = {
     escolha1: "Voltar ao <strong>início</strong>!",
     escolha1function: "início",
     escolha2: "Tentar <strong>reviver</strong>!",
-    escolha2function: "reviver",    
+    escolha2function: "reviver",
   },
   ["água-1"]: {
     texto:
@@ -86,9 +85,9 @@ function changeTexts(caminho) {
   button1.innerHTML = historia[caminho].escolha1;
   button2.innerHTML = historia[caminho].escolha2;
 
-  if ( historia[caminho].text_alert == "Você morreu!" ){
+  if (historia[caminho].text_alert == "Você morreu!") {
     texto_alerta.style.color = "rgb(145, 25, 49)";
-  }else{
+  } else {
     texto_alerta.style.color = "rgb(25, 77, 145)";
   }
   texto_alerta.innerHTML = historia[caminho].text_alert;
