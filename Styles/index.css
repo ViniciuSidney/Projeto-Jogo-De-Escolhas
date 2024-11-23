@@ -80,7 +80,7 @@ body {
 }
 
 main {
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(51, 51, 51);
   padding: 3% 0;
   margin: 0 20%;
 }
@@ -96,7 +96,7 @@ main {
 }
 
 #section-history {
-  background-color: rgb(182, 182, 182);
+  background-color: rgb(139, 139, 139);
   width: 70%;
   margin: 0 auto;
   padding: 5%;
