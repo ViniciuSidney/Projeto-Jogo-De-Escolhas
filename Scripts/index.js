@@ -136,8 +136,6 @@ function changeTexts(caminho) {
   typeWriter();
 }
 
-changeTexts("início");
-
 function callMainFunction(n) {
   if (texto_acabou == true) {
     if (n == 1) {
@@ -145,5 +143,20 @@ function callMainFunction(n) {
     } else {
       changeTexts(escolha2.getAttribute("value"));
     }
+  }
+}
+
+const tela_principal = document.getElementById("main-screen")
+const tela_jogo = document.getElementById("game-screen")
+
+function startGame() {
+  if ( tela_jogo.hasAttribute("hidden") ){
+    tela_jogo.removeAttribute("hidden");
+    tela_principal.setAttribute("hidden", true);
+
+    changeTexts("início");
+  }else{
+    // Hm, isso não deveria acontecer
+    tela_jogo.setAttribute("hidden", true);
   }
 }

@@ -17,7 +17,46 @@
       <h2 class="title" id="version">Versão <span>Protótipo</span></h2>
     </header>
 
-    <main>
+    <aside id="main-screen">
+      <section id="main-screen-header">
+        <h2 id="main-screen-title">Boas Vindas!</h2>
+        <p id="main-screen-paragraph">
+          Bem vindo ao meu <span>projeto de um jogo de escolhas</span>!<br />Na parte de baixo desta tela você pode encontrar, por enquanto, <span>esses 3 botões</span>,<br>nas quais cada um conta um exemplo de uma pequena <span>história diferente</span>!<br />Comece fazendo sua <span>primeira escolha</span> aqui!
+        </p>
+      </section>
+
+      <section id="history-buttons">
+        <button
+          onclick="startGame()"
+          class="jetbrains-mono button-history"
+          value=""
+          id="history-1"
+          type="button"
+        >
+          Sobrevivência Nômade
+        </button>
+        <button
+          onclick="startGame()"
+          class="jetbrains-mono button-history"
+          value=""
+          id="history-2"
+          type="button"
+        >
+          Atrasado Para a Aula
+        </button>
+        <button
+          onclick="startGame()"
+          class="jetbrains-mono button-history"
+          value=""
+          id="history-2"
+          type="button"
+        >
+          "Vai buscar pão!"
+        </button>
+      </section>
+    </aside>
+
+    <main id="game-screen" hidden>
       <h2 id="title-text-box">História</h2>
       <section id="section-history">
         <p id="text-box">Texto da História aqui!</p>
@@ -26,8 +65,24 @@
 
       <h2 id="title-buttons">Escolhas</h2>
       <section id="section-buttons">
-        <button onclick="callMainFunction(1)" class="jetbrains-mono" value="" id="choice-1" type="button">Escolha 1</button>
-        <button onclick="callMainFunction(2)" class="jetbrains-mono" value="" id="choice-2" type="button">Escolha 2</button>
+        <button
+          onclick="callMainFunction(1)"
+          class="jetbrains-mono"
+          value=""
+          id="choice-1"
+          type="button"
+        >
+          Escolha 1
+        </button>
+        <button
+          onclick="callMainFunction(2)"
+          class="jetbrains-mono"
+          value=""
+          id="choice-2"
+          type="button"
+        >
+          Escolha 2
+        </button>
       </section>
     </main>
     <script src="/Scripts/index.js"></script>

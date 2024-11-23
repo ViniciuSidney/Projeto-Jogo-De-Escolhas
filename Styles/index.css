@@ -17,6 +17,63 @@ body {
   margin-top: 1%;
 }
 
+/* Main Screen */
+#main-screen {
+  background-color: rgb(51, 51, 51);
+  padding: 3% 0;
+  margin: 0 10%;
+}
+
+#main-screen-header {
+  width: 77%;
+  margin: 0 auto;
+}
+
+#main-screen-title, #main-screen-paragraph {
+  color: rgb(211, 211, 211);
+  text-align: center;
+  margin-top: 0;
+}
+
+#main-screen-title {
+  font-weight: 800;
+}
+
+#main-screen-paragraph span{
+  color: #3fc795;
+  font-weight: bold;
+}
+
+#history-buttons {
+  /* background-color: rgb(88, 88, 88); */
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 5%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+}
+
+.button-history {
+  background-color: #1d8a62;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  padding: 15px 32px;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+
+  cursor: pointer;
+}
+
+/* Main */
+
 .title {
   color: rgb(255, 255, 255);
   text-align: center;
